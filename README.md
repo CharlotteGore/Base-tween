@@ -43,4 +43,4 @@ var myElement = $('#some-element'); //
 
 	})
 
-animation.play(); // run the animation. In this example, #some-element would move horizontally 100px. 
+	animation.play(); // run the animation. In this example, #some-element would move horizontally 100px. 
