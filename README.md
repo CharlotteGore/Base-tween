@@ -9,8 +9,9 @@ When you `play()` a tween, your `onTick()` callback is called. It is passed the 
 ## Features
 
 - Low level, framework / DOM neutral.
+- Async onTick() callback. You decide what happens with the calculated tween value.
 - Ultra slinky bezier curve based easing: deceleration, acceleration, 'bubble' and linear. 
-- onComplete handler.
+- Async onComplete() callback. 
 - Frame skipping / Progressive enhancement. Animations last the duration specified, but get smoother as the browser allows.
 - Full cross-browser support.
 - Uses requestAnimationFrame where supported
@@ -43,4 +44,3 @@ var animation = base.tween({
 })
 
 animation.play(); // run the animation. In this example, #some-element would move horizontally 100px. 
-
