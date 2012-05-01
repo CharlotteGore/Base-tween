@@ -24,7 +24,7 @@ When you `play()` a tween, your `onTick()` callback is called. It is passed the 
 
 ## Using
 
-var myElement = $('#some-element'); //
+	var myElement = $('#some-element'); // in this example, jQuery is being used, but you can use vanilla DOM or whatever.
 
 	var animation = base.tween({
 	
