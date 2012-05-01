@@ -26,21 +26,21 @@ When you `play()` a tween, your `onTick()` callback is called. It is passed the 
 
 var myElement = $('#some-element'); //
 
-var animation = base.tween({
+	var animation = base.tween({
 	
-	start : 0, // your start value
-	end : 100, // the end value
-	fps : 100, // target max FPS for non requestAnimationFrame browsers.
-	duration: 1000, // the animation length, in miliseconds
-	easing : 'accelerate', // 'accelerate' || 'decelerate' || 'bubble' || 'linear'
-	onComplete : function(){  // a callback to be executed when the animation is complete. 
-		// do something
-	},
-	onTick : function(tween){ 
-		// this function is called every 'tick'. 
-		myElement.css({ left : tween }); // in this example, myElement's .style.left is updated.  
-	}
+		start : 0, // your start value
+		end : 100, // the end value
+		fps : 100, // target max FPS for non requestAnimationFrame browsers.
+		duration: 1000, // the animation length, in miliseconds
+		easing : 'accelerate', // 'accelerate' || 'decelerate' || 'bubble' || 'linear'
+		onComplete : function(){  // a callback to be executed when the animation is complete. 
+			// do something
+		},
+		onTick : function(tween){ 
+			// this function is called every 'tick'. 
+			myElement.css({ left : tween }); // in this example, myElement's .style.left is updated.  
+		}
 
-})
+	})
 
 animation.play(); // run the animation. In this example, #some-element would move horizontally 100px. 
